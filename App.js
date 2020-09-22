@@ -16,7 +16,7 @@ const App = props => {
   const [toEdit, setToEdit] = useState("");
   const [toReplaceEdit, setToReplaceEdit] = useState("");
 
-  // useReducer ------------------------------------
+  // useReducer -------------------------------------
   const [stateLR, dispatchLR] = useReducer(
     loadingReducer,
     !!loadLS() && loadLS().loadingReducer ?
@@ -33,7 +33,7 @@ const App = props => {
   //CONSOLE STATE_LS OR STATE_REDUCER FOR CHECK CHANGES
   console.log(loadLS())
   console.log(stateLR)
-  // useReducer ------------------------------------
+  // useReducer -------------------------------------
 
   //componentDidMount()
   useEffect(() => {
